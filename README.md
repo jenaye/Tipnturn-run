@@ -1,15 +1,8 @@
 # Tipnturn-run
 
-> C program to run  api + front
+ C program to run  api + front
 
-___________.__               __                       
-\__    ___/|__|_____   _____/  |_ __ _________  ____  
-  |    |   |  \____ \ /    \   __\  |  \_  __ \/    \ 
-  |    |   |  |  |_> >   |  \  | |  |  /|  | \/   |  \
-  |____|   |__|   __/|___|  /__| |____/ |__|  |___|  /
-              |__|        \/                       \/ 
+> gcc -o main main.c
 
-
-gcc -o main main.c
-then ./main
+> ./main
 

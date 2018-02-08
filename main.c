@@ -31,14 +31,14 @@ int checkMenu(){
 	scanf("%d", &choice);
 
 	if(choice == 1) {
-		system("php -S localhost:1234 /home/jenaye/dev/adminer-4.3.1.php");
+		system("php -S localhost:1234 /home/$USERNAME/dev/adminer-4.3.1.php");
 	}else if (choice == 2) {
-		system("cd /home/jenaye/dev/TipnTurn && sudo docker-compose up");
+		system("cd /home/$USERNAME/dev/TipnTurn && sudo docker-compose up --build");
 	}else if (choice == 3) {
-		system("php /home/jenaye/dev/TipnTurn/tipnturn-api/bin/console server:start");
-		system("cd /home/jenaye/dev/TipnTurn/tipnturn-front && npm start");
+		system("php /home/$USERNAME/dev/TipnTurn/tipnturn-api/bin/console server:start");
+		system("cd /home/$USERNAME/dev/TipnTurn/tipnturn-front && npm start");
 	}else if (choice == 4) {
-		system("cd /home/jenaye/dev/github/Tipnturn-front && ungit");
+		system("cd /home/$USERNAME/dev/github/Tipnturn-front && ungit");
 	}else {
 		printf("Close program");
 		return -1;

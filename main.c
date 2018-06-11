@@ -33,12 +33,12 @@ int checkMenu(){
 	if(choice == 1) {
 		system("php -S localhost:1234 /home/$USERNAME/dev/adminer-4.3.1.php");
 	}else if (choice == 2) {
-		system("cd /home/$USERNAME/dev/TipnTurn && sudo docker-compose up --build");
+		system("cd /home/$USERNAME/dev/Tipnturn && sudo docker-compose up --build");
 	}else if (choice == 3) {
-		system("php /home/$USERNAME/dev/TipnTurn/tipnturn-api/bin/console server:start");
-		system("cd /home/$USERNAME/dev/TipnTurn/tipnturn-front && npm start");
+		system("php /home/$USERNAME/dev/Tipnturn/Tipnturn-api/bin/console server:start");
+		system("cd /home/$USERNAME/dev/Tipnturn/Tipnturn-front && npm start");
 	}else if (choice == 4) {
-		system("cd /home/$USERNAME/dev/github/Tipnturn-front && ungit");
+		system("cd /home/$USERNAME/dev/Tipnturn/Tipnturn-front && ungit");
 	}else {
 		printf("Close program");
 		return -1;
